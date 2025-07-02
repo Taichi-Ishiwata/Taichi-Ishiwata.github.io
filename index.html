@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taichi Ishiwata - App Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Taichi Ishiwata</h1>
+                <p>App Developer</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Creating Innovative<br>Mobile Experiences</h1>
+                <p class="hero-subtitle">iOS・Androidアプリ開発を通じて、ユーザーの日常を豊かにするソリューションを提供します</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Published Apps</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Active Since</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aboutセクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>モバイルアプリ開発に情熱を注ぐデベロッパーとして、ユーザーエクスペリエンスを重視したアプリケーション開発を行っています。SwiftとKotlinを駆使し、iOS・Android両プラットフォームでの開発経験を持ちます。</p>
+                    <p>AI技術から教育、ライフスタイルまで幅広い分野でアプリケーションを開発し、ユーザーの日常生活を向上させるソリューションの創造に取り組んでいます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アプリセクション -->
+    <section id="apps" class="apps">
+        <div class="container">
+            <h2 class="section-title">My Apps</h2>
+            <div class="app-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="smartvision">Smart Vision</button>
+                    <button class="tab-button" data-tab="inshiconnect">院試Connect</button>
+                    <button class="tab-button" data-tab="okaikei">お会計ルーレット</button>
+                    <button class="tab-button" data-tab="locationfinder">Location Finder</button>
+                    <button class="tab-button" data-tab="magical">MagiCal</button>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Smart Vision -->
+                    <div class="tab-panel active" id="smartvision">
+                        <div class="app-showcase">
+                            <div class="app-info">
+                                <h3>Smart Vision -AI技術に触れてみよう-</h3>
+                                <p class="app-category">ユーティリティ</p>
+                                <p class="app-description">
+                                    AI技術を身近に体験できるアプリケーション。コンピュータビジョンとAI処理を組み合わせ、
+                                    日常生活でAI技術の可能性を実感できる革新的なユーティリティアプリです。
+                                    最新のマシンラーニング技術を使用し、直感的なインターフェースで誰でも簡単にAI機能を利用できます。
+                                </p>
+                                <div class="app-features">
+                                    <h4>主な機能</h4>
+                                    <ul>
+                                        <li>AI画像認識機能</li>
+                                        <li>スマートな画像解析</li>
+                                        <li>リアルタイム処理</li>
+                                        <li>iPhone・iPad対応</li>
+                                    </ul>
+                                </div>
+                                <div class="app-stats">
+                                    <span class="downloads">2025年3月リリース</span>
+                                    <span class="rating">無料アプリ</span>
+                                </div>
+                            </div>
+                            <div class="app-image">
+                                <div class="mockup-phone">
+                                    <div class="phone-screen">
+                                        <div class="app-screenshot smartvision-screen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 院試Connect -->
+                    <div class="tab-panel" id="inshiconnect">
+                        <div class="app-showcase">
+                            <div class="app-info">
+                                <h3>院試Connect(東京科学大学)</h3>
+                                <p class="app-category">教育</p>
+                                <p class="app-description">
+                                    東京科学大学の大学院入試に特化した情報共有アプリ。受験生同士のコミュニティ機能、
+                                    過去問情報、試験対策のための包括的な学習支援を提供します。
+                                    受験生の合格をサポートする頼れるパートナーアプリです。
+                                </p>
+                                <div class="app-features">
+                                    <h4>主な機能</h4>
+                                    <ul>
+                                        <li>大学院入試情報の共有</li>
+                                        <li>受験生コミュニティ</li>
+                                        <li>過去問データベース</li>
+                                        <li>学習進捗管理</li>
+                                    </ul>
+                                </div>
+                                <div class="app-stats">
+                                    <span class="downloads">2025年2月リリース</span>
+                                    <span class="rating">無料アプリ</span>
+                                </div>
+                            </div>
+                            <div class="app-image">
+                                <div class="mockup-phone">
+                                    <div class="phone-screen">
+                                        <div class="app-screenshot inshiconnect-screen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- お会計ルーレット -->
+                    <div class="tab-panel" id="okaikei">
+                        <div class="app-showcase">
+                            <div class="app-info">
+                                <h3>お会計ルーレット</h3>
+                                <p class="app-category">ライフスタイル</p>
+                                <p class="app-description">
+                                    グループでの飲み会や食事会で「誰が支払うか」を楽しく決められるルーレットアプリ。
+                                    公平で楽しい支払い方法の決定をサポートし、グループの雰囲気を盛り上げます。
+                                    シンプルで直感的な操作で、誰でも簡単に使用できます。
+                                </p>
+                                <div class="app-features">
+                                    <h4>主な機能</h4>
+                                    <ul>
+                                        <li>アニメーション付きルーレット</li>
+                                        <li>参加者名の登録・管理</li>
+                                        <li>公平な抽選システム</li>
+                                        <li>楽しい演出効果</li>
+                                    </ul>
+                                </div>
+                                <div class="app-stats">
+                                    <span class="downloads">無料ダウンロード</span>
+                                    <span class="rating">iPhone・iPad対応</span>
+                                </div>
+                            </div>
+                            <div class="app-image">
+                                <div class="mockup-phone">
+                                    <div class="phone-screen">
+                                        <div class="app-screenshot okaikei-screen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Finder -->
+                    <div class="tab-panel" id="locationfinder">
+                        <div class="app-showcase">
+                            <div class="app-info">
+                                <h3>Location Finder</h3>
+                                <p class="app-category">ナビゲーション</p>
+                                <p class="app-description">
+                                    効率的な位置情報検索とナビゲーション機能を提供するアプリ。スマートな経路案内と
+                                    位置情報管理で、目的地への到達をサポートします。
+                                    高精度な位置情報技術を活用し、ユーザーの移動をスムーズにします。
+                                </p>
+                                <div class="app-features">
+                                    <h4>主な機能</h4>
+                                    <ul>
+                                        <li>高精度位置情報検索</li>
+                                        <li>スマートナビゲーション</li>
+                                        <li>お気に入り場所の保存</li>
+                                        <li>オフライン対応機能</li>
+                                    </ul>
+                                </div>
+                                <div class="app-stats">
+                                    <span class="downloads">無料ダウンロード</span>
+                                    <span class="rating">iPhone・iPad対応</span>
+                                </div>
+                            </div>
+                            <div class="app-image">
+                                <div class="mockup-phone">
+                                    <div class="phone-screen">
+                                        <div class="app-screenshot locationfinder-screen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MagiCal -->
+                    <div class="tab-panel" id="magical">
+                        <div class="app-showcase">
+                            <div class="app-info">
+                                <h3>MagiCal</h3>
+                                <p class="app-category">教育</p>
+                                <p class="app-description">
+                                    学習をより楽しく効果的にする教育アプリ。インタラクティブな学習体験と
+                                    魔法のような直感的なインターフェースで、知識の習得をサポートします。
+                                    ゲーミフィケーション要素を取り入れ、継続的な学習をサポートします。
+                                </p>
+                                <div class="app-features">
+                                    <h4>主な機能</h4>
+                                    <ul>
+                                        <li>インタラクティブ学習</li>
+                                        <li>進捗トラッキング</li>
+                                        <li>ゲーミフィケーション</li>
+                                        <li>多様な学習コンテンツ</li>
+                                    </ul>
+                                </div>
+                                <div class="app-stats">
+                                    <span class="downloads">無料ダウンロード</span>
+                                    <span class="rating">iPhone・iPad対応</span>
+                                </div>
+                            </div>
+                            <div class="app-image">
+                                <div class="mockup-phone">
+                                    <div class="phone-screen">
+                                        <div class="app-screenshot magical-screen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Mobile Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Swift</span>
+                        <span class="skill-item">SwiftUI</span>
+                        <span class="skill-item">Kotlin</span>
+                        <span class="skill-item">Android SDK</span>
+                        <span class="skill-item">React Native</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Database</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Firebase</span>
+                        <span class="skill-item">Core Data</span>
+                        <span class="skill-item">SQLite</span>
+                        <span class="skill-item">REST API</span>
+                        <span class="skill-item">GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Core ML</span>
+                        <span class="skill-item">Computer Vision</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">ARKit</span>
+                        <span class="skill-item">Vision Framework</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>新しいプロジェクトのご相談やコラボレーションのお話をお待ちしています。</p>
+                <div class="contact-info">
+                    <a href="mailto:taichi.ishiwata@example.com" class="contact-btn">
+                        <span>Email</span>
+                        <span>taichi.ishiwata@example.com</span>
+                    </a>
+                    <a href="https://apps.apple.com/ro/developer/taichi-ishiwata/id1780474189" class="contact-btn">
+                        <span>App Store</span>
+                        <span>Taichi Ishiwata</span>
+                    </a>
+                    <a href="https://github.com/taichi-ishiwata" class="contact-btn">
+                        <span>GitHub</span>
+                        <span>taichi-ishiwata</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Taichi Ishiwata. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
